@@ -9,31 +9,34 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    var framework: Framework
-    @State private var isShowingSafariView = false
+    @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
         VStack {
-            FrameworkTitleView(framework: framework)
+            FrameworkTitleView(framework: viewModel.framework)
             
-            Text(framework.description)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             
             Spacer()
             
-            Button {
-                isShowingSafariView = true
-            } label: {
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!) {
                 AFButton(title: "Learn More")
             }
-            .fullScreenCover(isPresented: $isShowingSafariView, content: {
-                SafariView(url: URL(string: framework.urlString) ?? URL(string: "wwww.apple.com")!)
-            })
+            
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                AFButton(title: "Learn More")
+//            }
+//            .fullScreenCover(isPresented: $viewModel.isShowingSafariView, content: {
+//                SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "wwww.apple.com")!)
+//            })
         }
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework)
+    FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: MockData.sampleFramework))
 }

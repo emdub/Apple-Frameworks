@@ -18,6 +18,7 @@
 		9ACB36B02B800DE40060B087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB36AF2B800DE40060B087 /* Assets.xcassets */; };
 		9ACB36B32B800DE40060B087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACB36B22B800DE40060B087 /* Preview Assets.xcassets */; };
 		9ACB36BA2B80117F0060B087 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB36B92B80117F0060B087 /* Framework.swift */; };
+		9AF164E92B8FFA9B00AD488B /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF164E82B8FFA9B00AD488B /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9ACB36AF2B800DE40060B087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACB36B22B800DE40060B087 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9ACB36B92B80117F0060B087 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		9AF164E82B8FFA9B00AD488B /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		9ABB88ED2B852506000606B4 /* FrameworkDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				9AF164E82B8FFA9B00AD488B /* FrameworkDetailViewModel.swift */,
 				9ABB88DD2B84046A000606B4 /* FrameworkDetailView.swift */,
 			);
 			path = FrameworkDetailView;
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF164E92B8FFA9B00AD488B /* FrameworkDetailViewModel.swift in Sources */,
 				9ABB88DE2B84046A000606B4 /* FrameworkDetailView.swift in Sources */,
 				9ABB88DC2B83B84F000606B4 /* FrameworkGridView.swift in Sources */,
 				9ABB88EA2B852144000606B4 /* XDismissButton.swift in Sources */,
